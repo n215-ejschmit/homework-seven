@@ -1,0 +1,224 @@
+.toursHolder {
+  margin: 0 auto;
+  max-width: $site-width;
+  margin-top: -100px;
+
+  .toursHero {
+    width: 75%;
+    height: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tours-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h2 {
+      color: white;
+      font-family: novaCondensed;
+      font-size: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
+  .rowHolder {
+    margin-bottom: 100px;
+    .destinationRow {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      max-width: 818px;
+      margin: auto;
+      margin-bottom: 3%;
+      .info {
+        span {
+          background-color: $site-blue;
+          padding: 10px 20px;
+          border-radius: 30px;
+        }
+      }
+      .NZ-pic {
+        .info {
+          h1 {
+            font-size: 50px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Here is the Styling for the different tour pages//
+.TourWrapper {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 980px;
+  
+
+  .hero {
+    max-width: 980px;
+    height: 418px;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    h1 {
+      font-family: novaCondensed;
+      font-size: 80px;
+      color: white;
+      padding-left: 10px;
+      width: fit-content;
+      margin-top: -200px;
+      // margin-left: -20px;
+    }
+
+    h3 {
+      color: white;
+      font-size: 30px;
+      font-family: NovaCondensed;
+      width: 400px;
+      margin-top: 400px;
+      margin-right: -40px
+      ;
+    }
+  }
+.dayHolder{
+  p{
+    font-family: gsReg;
+    font-size: 16px;
+  }
+}
+  .button {
+    width: 980px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 45%;
+    a {
+      color: $site-white;
+      font-family: gsLight;
+    }
+    span {
+      background-color: $site-blue;
+      padding: 10px 20px;
+      font-family: gsLight;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .TourImgRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: auto;
+    margin-top: 40px;
+    padding-left: 10px;
+    .TourImg {
+      img {
+        height: 350px;
+        max-width: 300px;
+       padding: 10px;
+      //  object-fit: cover
+       ;
+      }
+    }
+  }
+  .dayHolder {
+    margin-bottom: 80px;
+    max-width: 980px;
+    margin: auto;
+    padding: 10px;
+    padding-right: 10px;
+    .title {
+      width: fit-content;
+      border-bottom-width: 2px;
+      border-bottom-color: black;
+      border-bottom-style: solid;
+      padding-bottom: -30px;
+      margin-bottom: 35px;
+      h1 {
+        font-family: NovaCondensed;
+        font-size: 60px;
+      }
+    }
+    .dayTwo{
+      margin-top: 70px;
+    }
+    .dayThree{
+      margin-top: 70px;
+    }
+  }
+  .button {
+
+  }
+}
+
+//hero images//
+
+.isrealHero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tour-01.jpg);
+}
+
+.usaHero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tour-02.jpg);
+}
+
+.ausHero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tour-03.jpg);
+}
+
+.nzHero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tour-04.jpg);
+}
+
+.franceHero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tour-05.jpg);
+}
+
+.egyptHero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tour-06.jpg);
+}
+
+.japanHero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tour-07.jpg);
+}
+
+.canadaHero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tour-08.jpg);
+}
+
+.uaeHero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/tour/tour-09.jpg);
+}
+//media stuff
+
+@media (max-width:920px) {
+  .TourImgRow{
+    flex-direction: column;
+    img{
+      object-fit: cover;
+    }
+  }
+}

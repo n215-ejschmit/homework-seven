@@ -1,0 +1,53 @@
+@import "variables.scss";
+@import "componets.scss";
+@import "structure.scss";
+@import "nav.scss";
+@import "home.scss";
+@import "footer.scss";
+@import "about.scss";
+@import "tours.scss";
+@import "specialOffers.scss";
+@import "blog.scss";
+@import "contact.scss";
+
+
+
+//fonts//
+@font-face {
+    font-family:gsLight;
+    src: url(../css/fonts/Gill\ Sans\ Light.otf);
+}
+@font-face {
+    font-family: GillSansCondensed;
+    src: url(../css/fonts/GillSans\ Condensed.otf);
+}
+
+@font-face {
+    font-family: NovaCondensed;
+    src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+
+@font-face {
+    font-family: NovaReg;
+    src: url(../css/fonts/Proxima-Nova-Thin.otf);
+}
+
+@font-face {
+    font-family: gsItalic;
+    src: url(../css/fonts/Gill\ Sans\ Italic.otf);
+}
+
+@font-face {
+    font-family: gsReg;
+    src: url(../css/fonts/Gill\ Sans\ Medium.otf);
+}
+
+@font-face {
+    font-family: gsBold;
+    src: url(../css/fonts/Gill\ Sans\ Bold.otf);
+}
+
+@font-face {
+    font-family: gsCondensed;
+    src: url(../css/fonts/GillSans\ Condensed.otf);
+}

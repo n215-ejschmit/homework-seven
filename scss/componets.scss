@@ -1,0 +1,109 @@
+.background-props {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.destinations {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 818px;
+  min-height: $tour-banner-height;
+}
+
+.destination {
+  width: $tour-bannner-width;
+  height: $tour-banner-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .info {
+    width: 80%;
+    height: 85%;
+    // background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 70px;
+    font-family: NovaCondensed;
+
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 30px;
+      margin-top: -20px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      margin-top: 40px;
+    }
+  }
+}
+
+.isreal-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-01.jpg);
+  }
+
+  .usa-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-02.jpg);
+  }
+
+  .aussie-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-03.jpg);
+  }
+
+  //This is the BG images for the tours page, minus the few above that are on home as well//
+
+.destinationRow {
+  .NZ-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-04.jpg);
+  }
+
+  .france-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-05.jpg);
+  }
+
+  .egypt-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-06.jpg);
+  }
+
+  .japan-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-07.jpg);
+  }
+
+  .canada-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-08.jpg);
+  }
+
+  .UAE-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-09.jpg);
+  }
+}
+
+@media (max-width: 900px) {
+  .destination {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .destination {
+    margin-bottom: 50px;
+  }
+}

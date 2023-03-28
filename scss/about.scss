@@ -1,0 +1,68 @@
+.aboutWrapper {
+    max-width: $site-nav-width;
+    margin: 0 auto;
+    padding: 20px;
+  .AboutTitle {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 15%;
+    margin-bottom: 10%;
+
+    h2 {
+      font-size: 60px;
+      font-family: NovaCondensed;
+      text-decoration: underline;
+      margin-bottom: 3%;
+      font-weight: 3;
+    }
+    p {
+      font-family: gsLight;
+      font-size: 16px;
+    }
+  }
+
+  .quotes {
+    margin-bottom: 150px;
+    .quote{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        width: 620px;        
+        // max-width: 65%;
+        img{
+            max-width: 260px;
+            max-height: 150px;
+            margin-right: 5%;
+            
+        }
+        span{
+            color: $site-blue;
+            font-family: NovaCondensed;
+            font-size: 20px;
+            margin-left: 70%;
+            width: 200px;
+            overflow: hidden;
+    white-space: nowrap;
+        }
+        p{
+            font-size: 16px;
+            font-family: gsLight;
+            padding-bottom: 10%;
+        }
+    }
+    h3 {
+      font-family: NovaCondensed;
+      text-decoration: underline;
+      font-size: 40px;
+      font-weight: 2;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .quote{
+    width: 400px;
+  }
+}

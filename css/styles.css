@@ -1,0 +1,963 @@
+.background-props {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.destinations {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 818px;
+  min-height: 304px;
+}
+
+.destination {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.destination .info {
+  width: 80%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 70px;
+  font-family: NovaCondensed;
+}
+.destination .info h1 {
+  font-size: 60px;
+}
+.destination .info p {
+  font-size: 30px;
+  margin-top: -20px;
+}
+.destination .info a {
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.isreal-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
+}
+
+.usa-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
+}
+
+.aussie-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
+}
+
+.destinationRow .NZ-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-04.jpg);
+}
+.destinationRow .france-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-05.jpg);
+}
+.destinationRow .egypt-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-06.jpg);
+}
+.destinationRow .japan-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-07.jpg);
+}
+.destinationRow .canada-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-08.jpg);
+}
+.destinationRow .UAE-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-09.jpg);
+}
+
+@media (max-width: 900px) {
+  .destination {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .destination {
+    margin-bottom: 50px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.homeWrapper {
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.siteWrapper {
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-nav-holder {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+}
+.home-nav-holder .links {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: -2%;
+}
+.home-nav-holder .links p {
+  color: #79addc;
+  margin-top: 10px;
+}
+.home-nav-holder nav {
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-width: 2px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+}
+.home-nav-holder nav h1 {
+  margin-right: 250px;
+  margin-left: -100px;
+  color: white;
+}
+.home-nav-holder nav a {
+  text-decoration: none;
+  color: white;
+  font-family: gsLight;
+}
+
+.nav-holder {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+  top: 0;
+  left: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-holder .links {
+  max-width: 500px;
+  min-width: 450px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.nav-holder .links p {
+  color: #79addc;
+  margin-top: 10px;
+}
+.nav-holder nav {
+  width: 980px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+}
+.nav-holder nav a {
+  text-decoration: none;
+  color: black;
+  font-family: gsLight;
+  margin-top: 10px;
+  margin: 10px 5px;
+}
+
+.home .hero {
+  max-width: 1280px;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home .hero .callout {
+  max-width: 416px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+}
+.home .hero h1 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-family: NovaCondensed;
+  font-size: 60px;
+}
+.home .hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: gsItalic;
+  font-size: 20px;
+}
+.home .hero span {
+  background-color: #79addc;
+  padding: 10px 20px;
+  font-family: gsLight;
+}
+.home .hero a {
+  color: white;
+}
+.home .destinations {
+  display: flex;
+  justify-content: space-between;
+  margin: -43px auto 0 auto;
+}
+.home .destinations .info span {
+  background-color: #79addc;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.home .form-area {
+  min-height: 850px;
+  max-width: 818px;
+  margin: 50px auto 0 auto;
+}
+.home .form-area label {
+  font-family: GillSansCondensed;
+}
+.home .form-area h1 {
+  font-family: NovaCondensed;
+  font-size: 60px;
+}
+.home .form-area .form input {
+  border: solid #79addc 2px;
+  padding: 5px;
+  font-size: 18px;
+  height: 58px;
+  font-family: GillSansCondensed;
+}
+.home .form-area .form .two-input {
+  min-height: 58px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.home .form-area .form .two-input .left {
+  width: 48%;
+}
+.home .form-area .form .two-input .right {
+  width: 48%;
+}
+.home .form-area .form .single-line-input-holder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.home .form-area .form .single-line-input-holder label {
+  margin-right: 2%;
+}
+.home .form-area .form .single-line-input-holder .large-input {
+  width: 92%;
+  margin-right: -5px;
+}
+.home .form-area .form .single-line-input-holder .icon {
+  font-size: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.home .form-area .form .three-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.home .form-area .form .three-input input {
+  width: 105px;
+}
+.home .form-area .form .three-input i {
+  font-size: 25px;
+}
+.home .form-area .form .dropDown .icon {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -30px;
+}
+.home .form-area .form .largeForm input {
+  width: 100%;
+  height: 190px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.home .form-area .form .button {
+  width: 80%;
+  height: 60px;
+  background-color: #79addc;
+  border-radius: 30px;
+  margin-left: 10%;
+  margin-top: 35px;
+}
+.home .form-area .form .button span {
+  width: 100%;
+  height: 60px;
+  background-color: #79addc;
+  border-radius: 30px;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-family: gsLight;
+}
+
+@media (max-width: 900px) {
+  .home .destinations {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .home .form-area {
+    padding: 20px;
+  }
+  .home .form-area .form .two-input input .left {
+    width: 45%;
+  }
+  .home .form-area .form .two-input .largeForm {
+    max-width: 90%;
+  }
+  .home .form-area .form .two-input .single-line-input-holder {
+    margin-right: 2%;
+  }
+  .home .form-area .form .two-input .single-line-input-holder .large-input {
+    width: 90%;
+  }
+  .home .form-area .form .two-input .single-line-input-holder .large-input input {
+    width: 80%;
+    margin-left: -10%;
+  }
+  .home .form-area .form .two-input .single-line-input-holder input {
+    max-width: 80%;
+    margin-right: 10%;
+  }
+  .home .form-area .form .two-input .single-line-input-holder label {
+    size: 10px;
+  }
+  .home .form-area .form .two-input .single-line-input-holder .button {
+    width: 20%;
+  }
+  .home .form-area .form .two-input .single-line-input-holder .button a {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .three-input {
+    flex-direction: column;
+  }
+  .three-input input {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .three-input .dropDown {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #79ADDC;
+  height: 100px;
+}
+footer .footerLogo {
+  margin-left: 10%;
+}
+footer .footerText {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  margin-left: 27%;
+  width: 20%;
+}
+footer .footerText p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+}
+footer .footerIcons {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 20%;
+  margin-top: 25px;
+  width: 30%;
+}
+footer .footerIcons a {
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .footerLogo {
+    width: 10%;
+    margin-left: 5%;
+  }
+  .footerText {
+    width: 40%;
+    align-self: center;
+  }
+  .footerText p {
+    size: 5px;
+  }
+  .footerIcons {
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    width: 40%;
+  }
+}
+.aboutWrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.aboutWrapper .AboutTitle {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+.aboutWrapper .AboutTitle h2 {
+  font-size: 60px;
+  font-family: NovaCondensed;
+  text-decoration: underline;
+  margin-bottom: 3%;
+  font-weight: 3;
+}
+.aboutWrapper .AboutTitle p {
+  font-family: gsLight;
+  font-size: 16px;
+}
+.aboutWrapper .quotes {
+  margin-bottom: 150px;
+}
+.aboutWrapper .quotes .quote {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  width: 620px;
+}
+.aboutWrapper .quotes .quote img {
+  max-width: 260px;
+  max-height: 150px;
+  margin-right: 5%;
+}
+.aboutWrapper .quotes .quote span {
+  color: #79addc;
+  font-family: NovaCondensed;
+  font-size: 20px;
+  margin-left: 70%;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.aboutWrapper .quotes .quote p {
+  font-size: 16px;
+  font-family: gsLight;
+  padding-bottom: 10%;
+}
+.aboutWrapper .quotes h3 {
+  font-family: NovaCondensed;
+  text-decoration: underline;
+  font-size: 40px;
+  font-weight: 2;
+}
+
+@media (max-width: 1000px) {
+  .quote {
+    width: 400px;
+  }
+}
+.toursHolder {
+  margin: 0 auto;
+  max-width: 1280px;
+  margin-top: -100px;
+}
+.toursHolder .toursHero {
+  width: 75%;
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tours-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.toursHolder .toursHero h2 {
+  color: white;
+  font-family: novaCondensed;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.toursHolder .rowHolder {
+  margin-bottom: 100px;
+}
+.toursHolder .rowHolder .destinationRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 818px;
+  margin: auto;
+  margin-bottom: 3%;
+}
+.toursHolder .rowHolder .destinationRow .info span {
+  background-color: #79addc;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.toursHolder .rowHolder .destinationRow .NZ-pic .info h1 {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.TourWrapper {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 980px;
+}
+.TourWrapper .hero {
+  max-width: 980px;
+  height: 418px;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.TourWrapper .hero h1 {
+  font-family: novaCondensed;
+  font-size: 80px;
+  color: white;
+  padding-left: 10px;
+  width: fit-content;
+  margin-top: -200px;
+}
+.TourWrapper .hero h3 {
+  color: white;
+  font-size: 30px;
+  font-family: NovaCondensed;
+  width: 400px;
+  margin-top: 400px;
+  margin-right: -40px;
+}
+.TourWrapper .dayHolder p {
+  font-family: gsReg;
+  font-size: 16px;
+}
+.TourWrapper .button {
+  width: 980px;
+  margin-bottom: 100px;
+  margin-top: 80px;
+  margin-left: 45%;
+}
+.TourWrapper .button a {
+  color: #fff;
+  font-family: gsLight;
+}
+.TourWrapper .button span {
+  background-color: #79addc;
+  padding: 10px 20px;
+  font-family: gsLight;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.TourWrapper .TourImgRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: auto;
+  margin-top: 40px;
+  padding-left: 10px;
+}
+.TourWrapper .TourImgRow .TourImg img {
+  height: 350px;
+  max-width: 300px;
+  padding: 10px;
+}
+.TourWrapper .dayHolder {
+  margin-bottom: 80px;
+  max-width: 980px;
+  margin: auto;
+  padding: 10px;
+  padding-right: 10px;
+}
+.TourWrapper .dayHolder .title {
+  width: fit-content;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  padding-bottom: -30px;
+  margin-bottom: 35px;
+}
+.TourWrapper .dayHolder .title h1 {
+  font-family: NovaCondensed;
+  font-size: 60px;
+}
+.TourWrapper .dayHolder .dayTwo {
+  margin-top: 70px;
+}
+.TourWrapper .dayHolder .dayThree {
+  margin-top: 70px;
+}
+.isrealHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-01.jpg);
+}
+
+.usaHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-02.jpg);
+}
+
+.ausHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-03.jpg);
+}
+
+.nzHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-04.jpg);
+}
+
+.franceHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-05.jpg);
+}
+
+.egyptHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-06.jpg);
+}
+
+.japanHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-07.jpg);
+}
+
+.canadaHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-08.jpg);
+}
+
+.uaeHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-09.jpg);
+}
+
+@media (max-width: 920px) {
+  .TourImgRow {
+    flex-direction: column;
+  }
+  .TourImgRow img {
+    object-fit: cover;
+  }
+}
+.offers {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 50px;
+  padding-left: 5%;
+}
+.offers .offersTitle {
+  width: 150px;
+  height: 40px;
+  border-bottom: solid 2px black;
+  margin-bottom: 20px;
+}
+.offers h4 {
+  font-family: NovaCondensed;
+  font-size: 30px;
+  border-bottom-width: 2px;
+}
+.offers .offer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.offers .offer img {
+  width: 200px;
+  height: 290px;
+  object-fit: cover;
+}
+.offers .offer .offerText {
+  margin-top: -50px;
+}
+.offers .offer .offerText .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10%;
+}
+.offers .offer .offerText .title .place {
+  border-bottom: solid 2px black;
+  height: 40px;
+  width: 100%;
+}
+.offers .offer .offerText .title h5 {
+  color: #FF7D38;
+  font-size: 20px;
+  font-family: NovaCondensed;
+  margin-bottom: -2px;
+  margin-left: 20px;
+  margin-right: -20px;
+  width: 100px;
+}
+.offers .offer .offerText p {
+  max-width: 250px;
+  margin-left: 10%;
+  font-family: gsReg;
+  margin-top: 20px;
+}
+.offers .offer .offerText .button {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.offers .offer .offerText .button a {
+  color: #fff;
+  font-family: gsLight;
+}
+.offers .offer .offerText .button span {
+  background-color: #79addc;
+  padding: 10px 20px;
+  font-family: gsLight;
+  border-radius: 30px;
+}
+
+.blogWrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.blogWrapper .blogTitle {
+  margin-left: 20px;
+  font-family: NovaCondensed;
+  font-size: 30px;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  width: 50px;
+}
+.blogWrapper .blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.blogWrapper .blog .dateBox {
+  min-width: 60px;
+  min-height: 60px;
+  background-color: #79addc;
+  margin-top: -320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 2%;
+}
+.blogWrapper .blog .dateBox h3 {
+  margin-bottom: -4px;
+  font-family: gsBold;
+  font-size: 22px;
+  color: white;
+  margin-top: 2px;
+}
+.blogWrapper .blog .dateBox h4 {
+  font-family: gsCondensed;
+  font-size: 12px;
+  color: white;
+  margin-top: 8px;
+}
+.blogWrapper .blog .blogPost {
+  width: 100%;
+}
+.blogWrapper .blog .blogPost img {
+  width: 95%;
+  max-height: 260px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+.blogWrapper .blog .blogPost h3 {
+  margin-left: 20px;
+  font-family: gsReg;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.blogWrapper .blog .blogPost h4 {
+  margin-left: 20px;
+  color: #79addc;
+  font-size: 13px;
+  font-family: gsReg;
+  width: 380px;
+  margin-top: 10px;
+}
+
+.contactHolder {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.contactHolder .title {
+  border-bottom: 2px solid black;
+  width: 110px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.contactHolder .title h2 {
+  font-family: NovaCondensed;
+  font-size: 30px;
+}
+.contactHolder .boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contactHolder .boxes .left img {
+  width: 380px;
+  height: 380px;
+}
+.contactHolder .boxes .left .info {
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+.contactHolder .boxes .left .info p {
+  font-family: gsReg;
+  font-size: 18px;
+  margin: -1px;
+}
+.contactHolder .boxes .right .form {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -200px;
+}
+.contactHolder .boxes .right .form ::placeholder {
+  font-family: gsReg;
+  padding-left: 10px;
+}
+.contactHolder .boxes .right .form input {
+  width: 530px;
+  height: 60px;
+  background-color: #f5f5f5;
+  border: none;
+  margin-top: 21px;
+}
+.contactHolder .boxes .right .form textarea {
+  background-color: #f5f5f5;
+  border: none;
+  width: 530px;
+  height: 200px;
+  margin-top: 20px;
+}
+.contactHolder .boxes .right .form .button {
+  margin-top: 30px;
+  margin-left: -360px;
+}
+.contactHolder .boxes .right .form .button a {
+  color: #fff;
+  font-family: gsReg;
+}
+.contactHolder .boxes .right .form .button span {
+  background-color: #79addc;
+  padding: 15px 30px;
+  font-family: gsReg;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .boxes .left {
+    margin-bottom: 200px;
+  }
+  .boxes .right {
+    margin-bottom: 100px;
+  }
+}
+@font-face {
+  font-family: gsLight;
+  src: url(../css/fonts/Gill\ Sans\ Light.otf);
+}
+@font-face {
+  font-family: GillSansCondensed;
+  src: url(../css/fonts/GillSans\ Condensed.otf);
+}
+@font-face {
+  font-family: NovaCondensed;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: NovaReg;
+  src: url(../css/fonts/Proxima-Nova-Thin.otf);
+}
+@font-face {
+  font-family: gsItalic;
+  src: url(../css/fonts/Gill\ Sans\ Italic.otf);
+}
+@font-face {
+  font-family: gsReg;
+  src: url(../css/fonts/Gill\ Sans\ Medium.otf);
+}
+@font-face {
+  font-family: gsBold;
+  src: url(../css/fonts/Gill\ Sans\ Bold.otf);
+}
+@font-face {
+  font-family: gsCondensed;
+  src: url(../css/fonts/GillSans\ Condensed.otf);
+}
+
+/*# sourceMappingURL=styles.css.map */
